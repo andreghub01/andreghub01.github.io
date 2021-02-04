@@ -1,0 +1,525 @@
+/* Scroll Customize */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/*
+/ SWITCH BUTTON
+*/
+.dark-mode {
+  background: #e7e7e7;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.dark-mode .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+  /* Rounded sliders */
+}
+
+.dark-mode .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.dark-mode .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dark-mode .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, #dfdfdf), color-stop(50%, #3b3b3e));
+  background-image: linear-gradient(to right, #dfdfdf 50%, #3b3b3e 50%);
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 3px solid #3b3b3e;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.dark-mode .switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.dark-mode .switch input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+          box-shadow: 0 0 1px #2196f3;
+}
+
+.dark-mode .switch input:checked + .slider:before {
+  -webkit-transform: translateX(15px) rotate(-360deg);
+  transform: translateX(15px) rotate(-360deg);
+}
+
+.dark-mode .switch .slider.round {
+  border-radius: 34px;
+}
+
+.dark-mode .switch .slider.round:before {
+  border-radius: 50%;
+}
+
+.dark-mode span {
+  font-style: italic;
+}
+
+/*
+/ MAIN SCSS
+*/
+html,
+body {
+  background: #e7e7e7;
+  height: 100%;
+}
+
+html img,
+body img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  background: #2a3a4a;
+}
+
+.header .container .header__logo img {
+  max-width: 120px;
+}
+
+.sliding-activated {
+  max-width: unset;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  height: 300px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.sliding-activated .sliding-content {
+  display: inline-block;
+}
+
+.product__item__pic {
+  height: 200px;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product__item__text {
+  padding-top: 10px;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+.btn-synopsis {
+  width: 100%;
+  background-color: #e53637;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 15px;
+}
+
+.hero {
+  padding-top: 20px;
+}
+
+.hero .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero .hero__text {
+  padding-right: 15px;
+}
+
+.hero .hero__text .label {
+  background: #2a3a4a;
+  color: #e7e7e7;
+}
+
+.hero .hero__text h2,
+.hero .hero__text p {
+  padding: 10px;
+  background: rgba(64, 78, 92, 0.45);
+  border-radius: 10px;
+  color: #e7e7e7;
+}
+
+.hero .hero__slider.owl-carousel .owl-nav button {
+  background: #2a3a4a;
+}
+
+.product {
+  padding-top: 50px;
+}
+
+.product .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product .container .product__sidebar .product__sidebar__view .section-title h4,
+.product .container .product__sidebar .product__sidebar__view .section-title h5 {
+  color: #212529;
+}
+
+.product .container .product__sidebar .product__sidebar__view .filter__gallery .product__sidebar__view__item h5 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0e0e0e), to(#ffffff00));
+  background-image: linear-gradient(to top, #0e0e0e, #ffffff00);
+  bottom: 0;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  text-shadow: 2px 2px #212529;
+  color: #fff;
+}
+
+.product .container .product__sidebar .product__sidebar__view .filter__gallery .product__sidebar__view__item h5 a {
+  text-shadow: 2px 2px #212529;
+}
+
+.product .container .product__sidebar .product__sidebar__comment .section-title h4,
+.product .container .product__sidebar .product__sidebar__comment .section-title h5 {
+  color: #212529;
+}
+
+.product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__pic {
+  max-width: 100px;
+}
+
+.product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text ul li a {
+  color: #fff !important;
+}
+
+.product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text h5 a,
+.product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text span {
+  color: #3d3d3d;
+}
+
+.product .container .trending__product .section-title h4,
+.product .container .trending__product .section-title h5 {
+  color: #212529;
+}
+
+.product .container .trending__product .btn__all a {
+  color: #212529;
+}
+
+.product .container .trending__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.product .container .trending__product .product__item .product__item__text ul li a {
+  color: #fff !important;
+}
+
+.product .container .trending__product .product__item .product__item__text h5 a {
+  color: #212529;
+}
+
+.product .container .popular__product .section-title h4,
+.product .container .popular__product .section-title h5 {
+  color: #212529;
+}
+
+.product .container .popular__product .btn__all a {
+  color: #212529;
+}
+
+.product .container .popular__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.product .container .popular__product .product__item .product__item__text ul li a {
+  color: #fff !important;
+}
+
+.product .container .popular__product .product__item .product__item__text h5 a {
+  color: #212529;
+}
+
+.product .container .recent__product .section-title h4,
+.product .container .recent__product .section-title h5 {
+  color: #212529;
+}
+
+.product .container .recent__product .btn__all a {
+  color: #212529;
+}
+
+.product .container .recent__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.product .container .recent__product .product__item .product__item__text ul li a {
+  color: #fff !important;
+}
+
+.product .container .recent__product .product__item .product__item__text h5 a {
+  color: #212529;
+}
+
+.product .container .live__product .section-title h4,
+.product .container .live__product .section-title h5 {
+  color: #212529;
+}
+
+.product .container .live__product .btn__all a {
+  color: #212529;
+}
+
+.product .container .live__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.product .container .live__product .product__item .product__item__text ul li a {
+  color: #fff !important;
+}
+
+.product .container .live__product .product__item .product__item__text h5 a {
+  color: #212529;
+}
+
+.breadcrumb-option .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.breadcrumb-option .container .breadcrumb__links a {
+  color: #212529;
+}
+
+.breadcrumb-option .container .breadcrumb__links span {
+  color: #e53637;
+}
+
+/*
+/ ANIME DETAILS
+*/
+.anime-details h3 {
+  color: #212529;
+}
+
+.anime-details .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.anime-details .container .anime__details__pic {
+  height: 250px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anime-details .container .anime__details__text p {
+  color: #212529;
+}
+
+.anime-details .container .anime__details__text ul li {
+  color: #212529;
+  font-weight: bold;
+}
+
+.anime-details .container .anime__details__text ul li span {
+  color: #212529;
+  font-weight: normal;
+}
+
+.anime-details .container .anime__details__text .anime__details__title span {
+  color: #212529;
+}
+
+.anime-details .container .anime__details__text .hide-synopsis {
+  display: block;
+  height: 120px;
+}
+
+.anime-details .container .anime__details__text .anime__details__widget {
+  background-color: #fff;
+  display: inline-block;
+  width: 100%;
+}
+
+.anime-details .container .anime__details__review .section-title h4,
+.anime-details .container .anime__details__review .section-title h5 {
+  color: #212529;
+}
+
+.anime-details .container .anime__details__review .anime__review__item {
+  margin-bottom: 5px;
+}
+
+.anime-details .container .anime__details__review .anime__review__item .anime__review__item__text {
+  padding: 8px 8px 8px 15px;
+}
+
+.anime-details .container .anime__details__review .anime__review__item .anime__review__item__text h6 {
+  margin-bottom: 0;
+}
+
+.anime-details .container .anime__details__sidebar .section-title h4,
+.anime-details .container .anime__details__sidebar .section-title h5 {
+  color: #212529;
+}
+
+.anime-details .container .anime__details__sidebar .product__sidebar__view__item h5 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0e0e0e), to(#ffffff00));
+  background-image: linear-gradient(to top, #0e0e0e, #ffffff00);
+  bottom: 0;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  text-shadow: 2px 2px #212529;
+  color: #e7e7e7;
+}
+
+.anime-details .container .anime__video__player ul {
+  text-decoration: none;
+  list-style: none;
+}
+
+.anime-details .container .anime__video__player ul li img {
+  width: 100%;
+}
+
+.anime-details .container .anime__video__player {
+  display: -ms-grid;
+  display: grid;
+}
+
+.anime-details .container .anime__video__player .anime__tools,
+.anime-details .container .anime__video__player .anime__tools__object {
+  display: inline-block;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anime-details .container .anime__video__player .anime__tools .btn-synopsis,
+.anime-details .container .anime__video__player .anime__tools__object .btn-synopsis {
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+  padding-top: 7px;
+}
+
+.anime-details .container .anime__video__player .anime__tools .nice-select,
+.anime-details .container .anime__video__player .anime__tools__object .nice-select {
+  float: unset;
+  margin-bottom: 20px;
+}
+
+.anime-details .container .anime__video__player .anime__tools .nice-select ul,
+.anime-details .container .anime__video__player .anime__tools__object .nice-select ul {
+  width: 100%;
+}
+
+.anime-details .container .anime__video__player .section-title h4,
+.anime-details .container .anime__video__player .section-title h5 {
+  color: #212529;
+}
+
+.anime-details .container .anime__video__player p {
+  color: #212529;
+}
+
+.footer {
+  background: #2a3a4a;
+}
+
+.footer .container p {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+
+.footer .container .footer__logo img {
+  max-width: 120px;
+}
+
+.footer .container .footer__nav ul li a {
+  color: #e7e7e7;
+}
+
+@media only screen and (max-width: 767px) {
+  .slicknav_nav a {
+    display: inline-block;
+  }
+  .anime-details .container .anime__video__player .anime__tools,
+  .anime-details .container .anime__video__player .anime__tools__object {
+    padding: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .anime-details .container .anime__video__player .anime__tools .btn-synopsis,
+  .anime-details .container .anime__video__player .anime__tools__object .btn-synopsis {
+    display: unset;
+    width: 200px;
+    text-align: center;
+    padding-top: unset;
+    padding: 10px;
+    margin-left: 2px;
+  }
+  .anime-details .container .anime__video__player .anime__tools__object {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+/*# sourceMappingURL=main.css.map */

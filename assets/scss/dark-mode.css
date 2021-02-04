@@ -1,0 +1,209 @@
+.dark-mode-active {
+  /*
+  / ANIME DETAILS
+  */
+}
+
+.dark-mode-active .dark-mode {
+  background: #242933;
+}
+
+.dark-mode-active .dark-mode span {
+  color: #adadad;
+}
+
+.dark-mode-active .header {
+  background: #070720;
+}
+
+.dark-mode-active .hero .container {
+  background-color: #242933;
+}
+
+.dark-mode-active .hero .hero__text .label {
+  background: #070720;
+  color: #adadad;
+}
+
+.dark-mode-active .hero .hero__text h2,
+.dark-mode-active .hero .hero__text p {
+  background: rgba(64, 78, 92, 0.45);
+  color: #ffff;
+}
+
+.dark-mode-active .hero .hero__slider.owl-carousel .owl-nav button {
+  background: #242933;
+}
+
+.dark-mode-active .product .container {
+  background-color: #242933;
+}
+
+.dark-mode-active .product .container .product__sidebar .product__sidebar__view .section-title h4,
+.dark-mode-active .product .container .product__sidebar .product__sidebar__view .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .product__sidebar .product__sidebar__comment .section-title h4,
+.dark-mode-active .product .container .product__sidebar .product__sidebar__comment .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text h5 a,
+.dark-mode-active .product .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text span {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .trending__product .section-title h4,
+.dark-mode-active .product .container .trending__product .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .trending__product .btn__all a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .trending__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .product .container .trending__product .product__item .product__item__text h5 a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .popular__product .section-title h4,
+.dark-mode-active .product .container .popular__product .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .popular__product .btn__all a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .popular__product .px-3 p {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .popular__product .px-3 h4,
+.dark-mode-active .product .container .popular__product .px-3 h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .popular__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .product .container .popular__product .product__item .product__item__text h5 a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .recent__product .section-title h4,
+.dark-mode-active .product .container .recent__product .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .recent__product .btn__all a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .recent__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .product .container .recent__product .product__item .product__item__text h5 a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .live__product .section-title h4 {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .live__product .btn__all a {
+  color: #adadad;
+}
+
+.dark-mode-active .product .container .live__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .product .container .live__product .product__item .product__item__text h5 a {
+  color: #adadad;
+}
+
+.dark-mode-active .breadcrumb-option .container {
+  background-color: #242933;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.dark-mode-active .breadcrumb-option .container .breadcrumb__links a {
+  color: #adadad;
+}
+
+.dark-mode-active .breadcrumb-option .container .breadcrumb__links span {
+  color: #e53637;
+}
+
+.dark-mode-active .anime-details h3 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container {
+  background-color: #242933;
+}
+
+.dark-mode-active .anime-details .container .anime__details__text p {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__details__text ul li {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__details__text ul li span {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__details__text .anime__details__title span {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__details__text .anime__details__widget {
+  background-color: #242933;
+}
+
+.dark-mode-active .anime-details .container .anime__details__review .section-title h4,
+.dark-mode-active .anime-details .container .anime__details__review .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__details__sidebar h4,
+.dark-mode-active .anime-details .container .anime__details__sidebar h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__video__player .section-title h4,
+.dark-mode-active .anime-details .container .anime__video__player .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .anime__video__player p {
+  color: #adadad;
+}
+
+.dark-mode-active .footer {
+  background: #070720;
+}
+
+.dark-mode-active .footer .container p {
+  color: #b7b7b7;
+}
+
+.dark-mode-active .footer .container .footer__nav ul li a {
+  color: #e7e7e7;
+}
+/*# sourceMappingURL=dark-mode.css.map */

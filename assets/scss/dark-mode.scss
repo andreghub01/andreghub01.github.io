@@ -1,0 +1,278 @@
+$color-text: #adadad;
+$color-background-global: rgb(36, 41, 51);
+$color-container: rgb(36, 41, 51);
+$color-background: #070720;
+
+.dark-mode-active {
+  .dark-mode {
+    background: $color-background-global;
+    span {
+      color: $color-text;
+    }
+  }
+  .header {
+    background: $color-background;
+  }
+
+  .hero {
+    .container {
+      background-color: $color-container;
+    }
+
+    .hero__text {
+      .label {
+        background: $color-background;
+        color: $color-text;
+      }
+      h2,
+      p {
+        background: rgba(64, 78, 92, 0.45);
+        color: #ffff;
+      }
+    }
+    .hero__slider.owl-carousel .owl-nav button {
+      background: $color-background-global;
+    }
+  }
+
+  .product {
+    .container {
+      background-color: $color-container;
+
+      .product__sidebar {
+        .product__sidebar__view {
+          .section-title {
+            h4,
+            h5 {
+              color: $color-text;
+            }
+          }
+        }
+        .product__sidebar__comment {
+          .section-title {
+            h4,
+            h5 {
+              color: $color-text;
+            }
+          }
+          .product__sidebar__comment__item {
+            .product__sidebar__comment__item__text {
+              ul {
+                li {
+                  background: rgb(61, 61, 61) !important;
+                }
+              }
+              h5 a,
+              span {
+                color: $color-text;
+              }
+            }
+          }
+        }
+      }
+
+      .trending__product {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .btn__all {
+          a {
+            color: $color-text;
+          }
+        }
+        .product__item {
+          .product__item__text {
+            ul {
+              li {
+                background: rgb(61, 61, 61) !important;
+              }
+            }
+            h5 a {
+              color: $color-text;
+            }
+          }
+        }
+      }
+      .popular__product {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .btn__all {
+          a {
+            color: $color-text;
+          }
+        }
+        .px-3 {
+          p {
+            color: $color-text;
+          }
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .product__item {
+          .product__item__text {
+            ul {
+              li {
+                background: rgb(61, 61, 61) !important;
+              }
+            }
+            h5 a {
+              color: $color-text;
+            }
+          }
+        }
+      }
+      .recent__product {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .btn__all {
+          a {
+            color: $color-text;
+          }
+        }
+        .product__item {
+          .product__item__text {
+            ul {
+              li {
+                background: rgb(61, 61, 61) !important;
+              }
+            }
+            h5 a {
+              color: $color-text;
+            }
+          }
+        }
+      }
+      .live__product {
+        .section-title {
+          h4 {
+            color: $color-text;
+          }
+        }
+        .btn__all {
+          a {
+            color: $color-text;
+          }
+        }
+        .product__item {
+          .product__item__text {
+            ul {
+              li {
+                background: rgb(61, 61, 61) !important;
+              }
+            }
+            h5 a {
+              color: $color-text;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .breadcrumb-option {
+    .container {
+      background-color: $color-container;
+      padding: 20px;
+      border-radius: 10px;
+      .breadcrumb__links {
+        a {
+          color: $color-text;
+        }
+        span {
+          color: #e53637;
+        }
+      }
+    }
+  }
+
+  /*
+  / ANIME DETAILS
+  */
+
+  .anime-details {
+    h3 {
+      color: $color-text;
+    }
+    .container {
+      background-color: #242933;
+      .anime__details__text {
+        p {
+          color: $color-text;
+        }
+        ul {
+          li {
+            color: $color-text;
+            span {
+              color: $color-text;
+            }
+          }
+        }
+        .anime__details__title {
+          span {
+            color: $color-text;
+          }
+        }
+        .anime__details__widget {
+          background-color: $color-container;
+        }
+      }
+      .anime__details__review {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+      }
+      .anime__details__sidebar {
+        h4,
+        h5 {
+          color: $color-text;
+        }
+      }
+
+      .anime__video__player {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        p {
+          color: $color-text;
+        }
+      }
+    }
+  }
+
+  .footer {
+    background: $color-background;
+    .container {
+      p {
+        color: #b7b7b7;
+      }
+      .footer__nav {
+        ul {
+          li {
+            a {
+              color: #e7e7e7;
+            }
+          }
+        }
+      }
+    }
+  }
+}

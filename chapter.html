@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Anime Template" />
+    <meta name="keywords" content="Anime, unica, creative, html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manhuanelo</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="assets/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/elegant-icons.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/plyr.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="assets/css/owl.carousel.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="assets/scss/main.css" />
+    <link rel="stylesheet" href="assets/scss/dark-mode.css" />
+  </head>
+  <body>
+    <div id="preloder" style="display: none">
+      <div class="loader" style="display: none"></div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2">
+            <div class="header__logo">
+              <a href="./index.html">
+                <img src="assets/img/manhuanelo_logo.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="header__nav">
+              <nav class="header__menu mobile-menu">
+                <ul>
+                  <li class="active"><a href="./index.html">Homepage</a></li>
+                  <li><a href="./latest-manhua.html">Latest Manhua</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-2">
+            <div class="header__right">
+              <a href="#" class="search-switch"
+                ><span class="icon_search"></span
+              ></a>
+              <a href="./login.html"><span class="icon_profile"></span></a>
+            </div>
+          </div>
+        </div>
+        <div id="mobile-menu-wrap">
+          <div class="slicknav_menu">
+            <a
+              href="#"
+              aria-haspopup="true"
+              role="button"
+              tabindex="0"
+              class="slicknav_btn slicknav_collapsed"
+              style=""
+              ><span class="slicknav_menutxt">MENU</span
+              ><span class="slicknav_icon"
+                ><span class="slicknav_icon-bar"></span
+                ><span class="slicknav_icon-bar"></span
+                ><span class="slicknav_icon-bar"></span></span
+            ></a>
+            <nav
+              class="slicknav_nav slicknav_hidden"
+              style="display: none"
+              aria-hidden="true"
+              role="menu"
+            >
+              <ul>
+                <li class="active">
+                  <a href="./index.html" role="menuitem">Homepage</a>
+                </li>
+                <li class="slicknav_collapsed slicknav_parent">
+                  <a
+                    href="#"
+                    role="menuitem"
+                    aria-haspopup="true"
+                    tabindex="-1"
+                    class="slicknav_item slicknav_row"
+                    style=""
+                    ><a href="./categories.html"
+                      >Categories <span class="arrow_carrot-down"></span
+                    ></a>
+                    <span class="slicknav_arrow">►</span></a
+                  >
+                  <ul
+                    class="dropdown slicknav_hidden"
+                    role="menu"
+                    style="display: none"
+                    aria-hidden="true"
+                  >
+                    <li>
+                      <a href="./categories.html" role="menuitem" tabindex="-1"
+                        >Categories</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./comic.html" role="menuitem" tabindex="-1"
+                        >Anime Details</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./anime-watching.html"
+                        role="menuitem"
+                        tabindex="-1"
+                        >Anime Watching</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="./blog-details.html"
+                        role="menuitem"
+                        tabindex="-1"
+                        >Blog Details</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./signup.html" role="menuitem" tabindex="-1"
+                        >Sign Up</a
+                      >
+                    </li>
+                    <li>
+                      <a href="./login.html" role="menuitem" tabindex="-1"
+                        >Login</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="./blog.html" role="menuitem">Our Blog</a></li>
+                <li><a href="#" role="menuitem">Contacts</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="dark-mode">
+        <label class="switch">
+          <input type="checkbox" class="enable_dark_mode" />
+          <span class="slider round"></span>
+        </label>
+        <span>Enable Dark Mode!</span>
+      </div>
+    </header>
+
+    <div class="breadcrumb-option">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb__links">
+              <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+              <a href="./categories.html">Categories</a>
+              <a href="#">Romance</a>
+              <span>Fate Stay Night: Unlimited Blade</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="anime-details spad">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="anime__video__player">
+              <div class="anime__tools">
+                <select class="select-chapter">
+                  <option value="">Chapter 1</option>
+                </select>
+                <a href="./chapter.html" class="btn-synopsis">
+                  <i class="fa fa-angle-left"></i> Prev
+                </a>
+                <a href="./comic.html" class="btn-synopsis">Manhua Info</a>
+                <a href="./chapter.html" class="btn-synopsis">
+                  Next <i class="fa fa-angle-right"></i>
+                </a>
+              </div>
+              <div class="section-title">
+                <h4>Fate Stay Night: Unlimited Blade</h4>
+              </div>
+              <p>
+                Thank you for reading english
+                <b>Versatile Mage Chapter 637.</b> Please turn on your
+                Javascript when reading online this <b>Manhua</b> to stop errors
+                that might occur. Find and <b>read</b> other chapters of
+                <b>Versatile Mage Manhua</b> at Manhuanelo.
+              </p>
+              <ul>
+                <li>
+                  <img
+                    src="https://i0.wp.com/mangafast.net/img4/2021-02-4/1672831/page-2.jpg?q=70"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://i0.wp.com/mangafast.net/img4/2021-02-4/1672831/page-3.jpg?q=70"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://i0.wp.com/mangafast.net/img4/2021-02-4/1672831/page-4.jpg?q=70"
+                  />
+                </li>
+              </ul>
+              <p>
+                If you want to <b>read manhua online</b> like Versatile Mage,
+                you can find similar comic with Fantasy genre below. Versatile
+                Mage Chapter 637 released on Tuesday, 2 February 2021 and
+                created by Chaos .
+              </p>
+              <div class="anime__tools__object"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="page-up">
+        <a href="#" id="scrollToTopButton"
+          ><span class="arrow_carrot-up"></span
+        ></a>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="footer__logo">
+              <a href="./index.html"
+                ><img src="assets/img/manhuanelo_logo.png" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="footer__nav">
+              <ul>
+                <li class="active"><a href="./index.html">Homepage</a></li>
+                <li><a href="./latest-manhua.html">Latest Manhua</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <p>
+              © 2020 manhuanelo.com Inc. All rights reserved manhuanelo.com is a
+              platform intended for hosting the contribution from users and for
+              the users and not for commerical profit, rather it is intended for
+              the sake of enjoyment.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="search-model">
+      <div class="h-100 d-flex align-items-center justify-content-center">
+        <div class="search-close-switch"><i class="icon_close"></i></div>
+        <form class="search-model-form">
+          <input type="text" id="search-input" placeholder="Search here....." />
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/js/jquery.cookie.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/player.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/mixitup.min.js"></script>
+    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.custom.min.js"></script>
+  </body>
+</html>
