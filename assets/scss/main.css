@@ -167,7 +167,6 @@ h5 {
   border: 0;
   border-radius: 5px;
   height: 40px;
-  margin-bottom: 15px;
 }
 
 .hero {
@@ -353,6 +352,10 @@ h5 {
 /*
 / ANIME DETAILS
 */
+.anime-details {
+  padding-top: 30px;
+}
+
 .anime-details h3 {
   color: #212529;
 }
@@ -397,6 +400,7 @@ h5 {
   background-color: #fff;
   display: inline-block;
   width: 100%;
+  padding-top: 20px;
 }
 
 .anime-details .container .anime__details__review .section-title h4,

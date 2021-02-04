@@ -254,6 +254,14 @@ $color-background: #070720;
         p {
           color: $color-text;
         }
+        .nice-select {
+          background-color: #e53637;
+          color: #fff;
+          border: solid 1px #e53637;
+          ul {
+            color: $color-background-global;
+          }
+        }
       }
     }
   }

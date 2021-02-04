@@ -195,6 +195,16 @@
   color: #adadad;
 }
 
+.dark-mode-active .anime-details .container .anime__video__player .nice-select {
+  background-color: #e53637;
+  color: #fff;
+  border: solid 1px #e53637;
+}
+
+.dark-mode-active .anime-details .container .anime__video__player .nice-select ul {
+  color: #242933;
+}
+
 .dark-mode-active .footer {
   background: #070720;
 }
