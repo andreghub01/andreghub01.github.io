@@ -237,6 +237,62 @@ $color-background: #070720;
           }
         }
       }
+      .trending__product {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .btn__all {
+          a {
+            color: $color-text;
+          }
+        }
+        .product__item {
+          .product__item__text {
+            ul {
+              li {
+                background: rgb(61, 61, 61) !important;
+              }
+            }
+            h5 a {
+              color: $color-text;
+            }
+          }
+        }
+      }
+      .product__sidebar {
+        .product__sidebar__view {
+          .section-title {
+            h4,
+            h5 {
+              color: $color-text;
+            }
+          }
+        }
+        .product__sidebar__comment {
+          .section-title {
+            h4,
+            h5 {
+              color: $color-text;
+            }
+          }
+          .product__sidebar__comment__item {
+            .product__sidebar__comment__item__text {
+              ul {
+                li {
+                  background: rgb(61, 61, 61) !important;
+                }
+              }
+              h5 a,
+              span {
+                color: $color-text;
+              }
+            }
+          }
+        }
+      }
       .anime__details__sidebar {
         h4,
         h5 {
@@ -322,19 +378,37 @@ $color-background: #070720;
             }
           }
           .product__sidebar__comment__item__text {
+            h5 {
+              a {
+                color: $color-text;
+              }
+            }
             ul {
-              .active {
-                background: $color-text;
+              li {
+                background: rgb(61, 61, 61) !important;
                 a {
-                  color: $color-background-global;
-                  background: $color-text;
+                  color: $color-text !important;
                 }
               }
-              li {
-                background: $color-background-global;
-                a {
-                  background: $color-background-global;
-                  color: $color-text;
+            }
+            span {
+              color: $color-text;
+            }
+            .product__sidebar__genre__menu {
+              ul {
+                .active {
+                  background: $color-text !important;
+                  a {
+                    color: $color-background-global !important;
+                    background: $color-text;
+                  }
+                }
+                li {
+                  background: unset !important;
+                  a {
+                    background: $color-container;
+                    color: $color-text !important;
+                  }
                 }
               }
             }

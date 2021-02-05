@@ -445,6 +445,86 @@ h5 {
         }
       }
     }
+    .product__sidebar {
+      .product__sidebar__view {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .filter__gallery {
+          .product__sidebar__view__item {
+            h5 {
+              background-image: linear-gradient(to top, #0e0e0e, #ffffff00);
+              bottom: 0;
+              border-radius: 5px;
+              padding-bottom: 25px;
+              text-shadow: 2px 2px $color-text;
+              color: $color-container;
+            }
+            h5 a {
+              text-shadow: 2px 2px $color-text;
+            }
+          }
+        }
+      }
+      .product__sidebar__comment {
+        .section-title {
+          h4,
+          h5 {
+            color: $color-text;
+          }
+        }
+        .product__sidebar__comment__item {
+          .product__sidebar__comment__item__pic {
+            max-width: 100px;
+          }
+          .product__sidebar__comment__item__text {
+            ul {
+              li {
+                background: rgb(61, 61, 61) !important;
+                a {
+                  color: $color-container !important;
+                }
+              }
+            }
+            h5 a,
+            span {
+              color: #3d3d3d;
+            }
+          }
+        }
+      }
+    }
+    .trending__product {
+      .section-title {
+        h4,
+        h5 {
+          color: $color-text;
+        }
+      }
+      .btn__all {
+        a {
+          color: $color-text;
+        }
+      }
+      .product__item {
+        .product__item__text {
+          ul {
+            li {
+              background: rgb(61, 61, 61) !important;
+              a {
+                color: $color-container !important;
+              }
+            }
+          }
+          h5 a {
+            color: $color-text;
+          }
+        }
+      }
+    }
     .anime__details__sidebar {
       .section-title {
         h4,
@@ -587,22 +667,42 @@ h5 {
           }
         }
         .product__sidebar__comment__item__text {
+          h5 {
+            a {
+              color: $color-background;
+            }
+          }
           ul {
-            .active {
-              background: $color-background;
-              border-radius: 10px;
+            li {
+              background: rgb(61, 61, 61) !important;
               a {
-                color: $color-container;
-                background: $color-background;
-                border-bottom: 0;
+                color: $color-container !important;
               }
             }
-            li {
-              a {
-                background: $color-container;
-                border-bottom: 1px solid #e53637;
-                border-radius: 0;
-                color: $color-background;
+          }
+          h5 a,
+          span {
+            color: #3d3d3d;
+          }
+          .product__sidebar__genre__menu {
+            ul {
+              .active {
+                background: $color-background !important;
+                border-radius: 10px;
+                a {
+                  color: $color-container !important;
+                  background: $color-background;
+                  border-bottom: 0;
+                }
+              }
+              li {
+                background: unset !important;
+                a {
+                  background: $color-container;
+                  border-bottom: 1px solid #e53637;
+                  border-radius: 0;
+                  color: $color-background !important;
+                }
               }
             }
           }

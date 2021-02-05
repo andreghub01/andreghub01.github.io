@@ -421,6 +421,68 @@ h5 {
   margin-bottom: 0;
 }
 
+.anime-details .container .product__sidebar .product__sidebar__view .section-title h4,
+.anime-details .container .product__sidebar .product__sidebar__view .section-title h5 {
+  color: #212529;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__view .filter__gallery .product__sidebar__view__item h5 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0e0e0e), to(#ffffff00));
+  background-image: linear-gradient(to top, #0e0e0e, #ffffff00);
+  bottom: 0;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  text-shadow: 2px 2px #212529;
+  color: #fff;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__view .filter__gallery .product__sidebar__view__item h5 a {
+  text-shadow: 2px 2px #212529;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__comment .section-title h4,
+.anime-details .container .product__sidebar .product__sidebar__comment .section-title h5 {
+  color: #212529;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__pic {
+  max-width: 100px;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text ul li a {
+  color: #fff !important;
+}
+
+.anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text h5 a,
+.anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text span {
+  color: #3d3d3d;
+}
+
+.anime-details .container .trending__product .section-title h4,
+.anime-details .container .trending__product .section-title h5 {
+  color: #212529;
+}
+
+.anime-details .container .trending__product .btn__all a {
+  color: #212529;
+}
+
+.anime-details .container .trending__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.anime-details .container .trending__product .product__item .product__item__text ul li a {
+  color: #fff !important;
+}
+
+.anime-details .container .trending__product .product__item .product__item__text h5 a {
+  color: #212529;
+}
+
 .anime-details .container .anime__details__sidebar .section-title h4,
 .anime-details .container .anime__details__sidebar .section-title h5 {
   color: #212529;
@@ -550,22 +612,43 @@ h5 {
   color: #212529;
 }
 
-.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul .active {
-  background: #2a3a4a;
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text h5 a {
+  color: #2a3a4a;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul li a {
+  color: #fff !important;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text h5 a,
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text span {
+  color: #3d3d3d;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul .active {
+  background: #2a3a4a !important;
   border-radius: 10px;
 }
 
-.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul .active a {
-  color: #fff;
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul .active a {
+  color: #fff !important;
   background: #2a3a4a;
   border-bottom: 0;
 }
 
-.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul li a {
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul li {
+  background: unset !important;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul li a {
   background: #fff;
   border-bottom: 1px solid #e53637;
   border-radius: 0;
-  color: #2a3a4a;
+  color: #2a3a4a !important;
 }
 
 .anime__search__content {

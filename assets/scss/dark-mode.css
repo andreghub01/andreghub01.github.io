@@ -181,6 +181,42 @@
   color: #adadad;
 }
 
+.dark-mode-active .anime-details .container .trending__product .section-title h4,
+.dark-mode-active .anime-details .container .trending__product .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .trending__product .btn__all a {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .trending__product .product__item .product__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .anime-details .container .trending__product .product__item .product__item__text h5 a {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__view .section-title h4,
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__view .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__comment .section-title h4,
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__comment .section-title h5 {
+  color: #adadad;
+}
+
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text ul li {
+  background: #3d3d3d !important;
+}
+
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text h5 a,
+.dark-mode-active .anime-details .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item .product__sidebar__comment__item__text span {
+  color: #adadad;
+}
+
 .dark-mode-active .anime-details .container .anime__details__sidebar h4,
 .dark-mode-active .anime-details .container .anime__details__sidebar h5 {
   color: #adadad;
@@ -247,22 +283,38 @@
   color: #adadad;
 }
 
-.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul .active {
-  background: #adadad;
-}
-
-.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul .active a {
-  color: #242933;
-  background: #adadad;
+.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text h5 a {
+  color: #adadad;
 }
 
 .dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul li {
-  background: #242933;
+  background: #3d3d3d !important;
 }
 
 .dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul li a {
-  background: #242933;
+  color: #adadad !important;
+}
+
+.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text span {
   color: #adadad;
+}
+
+.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul .active {
+  background: #adadad !important;
+}
+
+.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul .active a {
+  color: #242933 !important;
+  background: #adadad;
+}
+
+.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul li {
+  background: unset !important;
+}
+
+.dark-mode-active .product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text .product__sidebar__genre__menu ul li a {
+  background: #242933;
+  color: #adadad !important;
 }
 
 .dark-mode-active .anime__search__content .anime__details__content .anime__details__text .anime__details__title h3 {
