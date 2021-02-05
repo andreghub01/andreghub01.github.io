@@ -160,7 +160,8 @@ h5 {
   font-size: 15px;
 }
 
-.btn-synopsis {
+.btn-synopsis,
+.btn-next-prev {
   width: 100%;
   background-color: #e53637;
   color: #fff;
@@ -458,7 +459,9 @@ h5 {
 }
 
 .anime-details .container .anime__video__player .anime__tools .btn-synopsis,
-.anime-details .container .anime__video__player .anime__tools__object .btn-synopsis {
+.anime-details .container .anime__video__player .anime__tools .btn-next-prev,
+.anime-details .container .anime__video__player .anime__tools__object .btn-synopsis,
+.anime-details .container .anime__video__player .anime__tools__object .btn-next-prev {
   display: inline-block;
   width: 200px;
   text-align: center;
@@ -639,8 +642,8 @@ h5 {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  .anime-details .container .anime__video__player .anime__tools .btn-synopsis,
-  .anime-details .container .anime__video__player .anime__tools__object .btn-synopsis {
+  .anime-details .container .anime__video__player .anime__tools .btn-next-prev,
+  .anime-details .container .anime__video__player .anime__tools__object .btn-next-prev {
     display: unset;
     width: 200px;
     text-align: center;
