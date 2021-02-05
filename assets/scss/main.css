@@ -485,6 +485,133 @@ h5 {
   color: #212529;
 }
 
+.product-page .container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.product-page .container .product__page__title .section-title h4,
+.product-page .container .product__page__title .section-title h5 {
+  color: #212529;
+}
+
+.product-page .container .product__item .product__item__text ul li {
+  background: #2a3a4a;
+}
+
+.product-page .container .product__item .product__item__text ul li a {
+  color: #fff;
+}
+
+.product-page .container .product__item .product__item__text h4 a,
+.product-page .container .product__item .product__item__text h5 a {
+  color: #212529;
+}
+
+.product-page .container .product__pagination a {
+  color: #212529;
+  border: 1px solid #2a3a4a;
+}
+
+.product-page .container .product__pagination a i {
+  color: #212529;
+}
+
+.product-page .container .product__pagination .current-page {
+  color: #e7e7e7;
+  background: #2a3a4a;
+}
+
+.product-page .container .product__sidebar .product__sidebar__view .section-title h4,
+.product-page .container .product__sidebar .product__sidebar__view .section-title h5 {
+  color: #212529;
+}
+
+.product-page .container .product__sidebar .product__sidebar__view .filter__gallery .product__sidebar__view__item h5 {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0e0e0e), to(#ffffff00));
+  background-image: linear-gradient(to top, #0e0e0e, #ffffff00);
+  bottom: 0;
+  border-radius: 5px;
+  padding-bottom: 25px;
+  text-shadow: 2px 2px #212529;
+  color: #fff;
+}
+
+.product-page .container .product__sidebar .product__sidebar__view .filter__gallery .product__sidebar__view__item h5 a {
+  text-shadow: 2px 2px #212529;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .section-title h4,
+.product-page .container .product__sidebar .product__sidebar__comment .section-title h5 {
+  color: #212529;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul .active {
+  background: #2a3a4a;
+  border-radius: 10px;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul .active a {
+  color: #fff;
+  background: #2a3a4a;
+  border-bottom: 0;
+}
+
+.product-page .container .product__sidebar .product__sidebar__comment .product__sidebar__comment__item__text ul li a {
+  background: #fff;
+  border-bottom: 1px solid #e53637;
+  border-radius: 0;
+  color: #2a3a4a;
+}
+
+.anime__search__content {
+  width: 100%;
+}
+
+.anime__search__content .anime__details__content {
+  margin: 15px;
+  padding: 15px;
+}
+
+.anime__search__content .anime__details__content .anime__details__pic {
+  height: 250px;
+  width: 170px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.anime__search__content .anime__details__content .anime__details__text .anime__details__title h3 {
+  color: #212529;
+}
+
+.anime__search__content .anime__details__content .anime__details__text .anime__details__rating span {
+  font-weight: bold;
+  color: #212529;
+}
+
+.anime__search__content .anime__details__content .anime__details__text .anime__details__widget {
+  display: inline-block;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.anime__search__content .anime__details__content .anime__details__text .anime__details__widget ul li {
+  color: #212529;
+}
+
+.anime__search__content .anime__details__content .anime__details__text .anime__details__widget ul li span {
+  color: #212529;
+}
+
+.anime__search__content .anime__details__content .anime__details__text .anime__details__widget ul li a {
+  padding: 5px 10px 5px 10px;
+  font-size: 14px;
+  background: #2a3a4a;
+  color: #fff;
+  border-radius: 50px;
+}
+
 .footer {
   background: #2a3a4a;
 }
