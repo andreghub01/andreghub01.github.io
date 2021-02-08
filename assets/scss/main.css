@@ -136,6 +136,9 @@ body img {
 
 .sliding-activated .sliding-content {
   display: inline-block;
+  -webkit-box-flex: 0;
+      -ms-flex: 0;
+          flex: 0;
 }
 
 .product__item__pic {

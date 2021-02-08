@@ -131,6 +131,7 @@ body {
   flex-wrap: nowrap;
   .sliding-content {
     display: inline-block;
+    flex: 0;
   }
 }
 .product__item__pic {
