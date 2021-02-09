@@ -33,7 +33,6 @@ $color-container: #fff;
 .dark-mode {
   background: #e7e7e7;
   text-align: center;
-  padding-top: 25px;
   .switch {
     position: relative;
     display: inline-block;
@@ -366,6 +365,7 @@ h5 {
 }
 
 .breadcrumb-option {
+  padding-top: 0;
   .container {
     background-color: $color-container;
     padding: 20px;
@@ -421,6 +421,7 @@ h5 {
       .hide-synopsis {
         display: block;
         height: 120px;
+        overflow: hidden;
       }
       .anime__details__widget {
         background-color: $color-container;
@@ -758,6 +759,10 @@ h5 {
       }
     }
   }
+}
+
+.popular {
+  max-width: 100px;
 }
 
 .footer {

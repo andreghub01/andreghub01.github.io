@@ -28,7 +28,6 @@
 .dark-mode {
   background: #e7e7e7;
   text-align: center;
-  padding-top: 25px;
 }
 
 .dark-mode .switch {
@@ -339,6 +338,10 @@ h5 {
   color: #212529;
 }
 
+.breadcrumb-option {
+  padding-top: 0;
+}
+
 .breadcrumb-option .container {
   background-color: #fff;
   padding: 20px;
@@ -398,6 +401,7 @@ h5 {
 .anime-details .container .anime__details__text .hide-synopsis {
   display: block;
   height: 120px;
+  overflow: hidden;
 }
 
 .anime-details .container .anime__details__text .anime__details__widget {
@@ -699,6 +703,10 @@ h5 {
   background: #2a3a4a;
   color: #fff;
   border-radius: 50px;
+}
+
+.popular {
+  max-width: 100px;
 }
 
 .footer {
