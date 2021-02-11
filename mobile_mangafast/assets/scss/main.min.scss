@@ -1,0 +1,139 @@
+$color-basic: #1e2129;
+$color-font: #ffff;
+body {
+  margin: 0;
+  padding: 0;
+  background: #222731;
+}
+img {
+  object-fit: cover;
+}
+header {
+  margin: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  .top {
+    padding: 1rem;
+    height: 70px;
+    .col-search {
+      top: 4.3rem;
+    }
+    .search {
+      input {
+        background: $color-basic;
+        box-shadow: inset 0px 3px 3px 1px #1515158c;
+      }
+    }
+  }
+  .menu {
+    right: 0;
+    left: 0;
+    top: 4.3rem;
+  }
+}
+/*
+/ PROGRESS BAR
+*/
+.progress {
+  overflow: visible;
+  margin-bottom: 26px;
+  height: 15px;
+  border-radius: 0;
+  background-color: #636363;
+  span {
+    color: $color-font;
+    font-size: 14px;
+    border-radius: 0;
+    position: absolute;
+    padding-left: 5%;
+  }
+  .progress-bar {
+    background-color: #dc3545;
+    position: relative;
+    border-radius: 0;
+  }
+}
+/* 
+/ SECTION
+*/
+section {
+  padding-top: 4rem;
+  .mobile-menu {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      border-radius: 10px;
+      height: 50px;
+      width: 50px;
+      padding: 0;
+      font-size: 20px;
+    }
+    span {
+      margin-top: 5px;
+      display: block;
+    }
+  }
+  .carousel {
+    .carousel-control {
+      span {
+        position: absolute;
+        top: 50%;
+      }
+    }
+  }
+  .icon-hd {
+    position: absolute;
+    top: 0;
+    width: 3rem;
+    border-radius: 5px;
+  }
+  .mix-movies-con {
+    margin-bottom: 1.5rem;
+  }
+  .movie-box {
+    margin-bottom: 0;
+  }
+  .home-con {
+    background-color: unset;
+  }
+}
+.popular-week {
+  flex-direction: unset;
+  background-color: #15171d;
+}
+.episode-235 {
+  max-width: 300px;
+}
+.episode-box {
+  width: unset;
+  margin-bottom: unset;
+  .poster {
+    height: 170px;
+    width: 120px;
+  }
+  .icon-hd {
+    position: absolute;
+    top: 0;
+    width: 3rem;
+    border-radius: 5px;
+    font-size: 12px;
+    padding: 0.25rem;
+  }
+}
+.synopsis-box {
+  display: inline-block;
+  width: 190px;
+  color: $color-font;
+  overflow-y: scroll;
+  height: 160px;
+  .title {
+    padding-bottom: 5px;
+  }
+  .synopsis-text {
+    font-size: 12px;
+    line-height: 0.8rem;
+  }
+}
