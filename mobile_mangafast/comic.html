@@ -46,14 +46,12 @@
             <div class="bookmark"></div>
           </div>
           <div class="background-tab">
-            <div class="tab-about active">
-              <a id="tab-about-show"> About</a>
-            </div>
-            <div class="tab-chapter">
-              <a id="tab-chapter-show"> Chapter</a>
-            </div>
+            <i class="fa fa-angle-up"></i>
             <div class="tab-content-wrapper">
-              <div class="tab-content-about active" style="display: none">
+              <div class="tab-about active">
+                <a id="tab-about-show"> About</a>
+              </div>
+              <div class="tab-content-about active">
                 <table>
                   <tr>
                     <td>Alternative :</td>
@@ -93,7 +91,10 @@
                   dungeons
                 </p>
               </div>
-              <div class="tab-content-chapter" style="display: none">
+              <div class="tab-chapter active">
+                <a id="tab-chapter-show"> Chapter</a>
+              </div>
+              <div class="tab-content-chapter">
                 <div class="chapter-wrapper">
                   <a href="./chapter.html">
                     <span>Chapter 1 - One week ago</span>
@@ -138,5 +139,28 @@
     <script src="assets/plugins/bootstrap-3.4.1/bootstrap.min.js"></script>
     <script src="assets/plugins/bootstrap/bootstrap.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script>
+      var position = $(window).scrollTop();
+      var bpBottom = $(".background-property").css("bottom");
+      $(window).scroll(function () {
+        var scroll = $(window).scrollTop();
+        var calculate = parseInt(bpBottom) + position;
+        console.log(scroll);
+        if (scroll > position) {
+          //Up
+          $(".footer").removeClass("footer-custom");
+          if (position > 375) {
+            $(".header").removeClass("header-custom");
+          }
+        } else {
+          //Down
+          if (position < 375) {
+            $(".header").addClass("header-custom");
+          }
+          $(".footer").addClass("footer-custom");
+        }
+        position = scroll;
+      });
+    </script>
   </body>
 </html>

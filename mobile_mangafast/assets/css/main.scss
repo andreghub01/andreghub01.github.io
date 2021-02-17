@@ -92,6 +92,18 @@ $border-radius: 15px;
         font-weight: bold;
       }
     }
+    .chapter-menu {
+      display: inline-block;
+      padding: 23px;
+      position: absolute;
+      right: 0;
+      top: 0;
+      cursor: pointer;
+      i {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
     .mobile-menu-dropdown {
       position: absolute;
       top: 55px;
@@ -150,6 +162,20 @@ $border-radius: 15px;
       }
     }
   }
+  .chapter-menu-dropdown {
+    padding: 10px;
+    input {
+      margin: 10px 0 10px 0;
+      border-radius: $border-radius;
+    }
+    ul {
+      li {
+        padding: 10px 5px 10px 5px !important;
+        a {
+        }
+      }
+    }
+  }
   .header-custom {
     background: transparent;
     .mobile-menu,
@@ -166,6 +192,18 @@ $border-radius: 15px;
       right: 25px;
     }
   }
+  .header-custom-2 {
+    background-image: linear-gradient(180deg, #000000, transparent) !important;
+    background: transparent;
+    .mobile-menu {
+      i {
+        color: $color-1 !important;
+      }
+    }
+    .chapter-menu {
+      color: $color-1 !important;
+    }
+  }
   .container {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -173,6 +211,10 @@ $border-radius: 15px;
   .container-2 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .container-3 {
+    margin: 0;
+    padding: 0;
   }
   .container-book-custom {
     padding-right: 5px;
@@ -190,6 +232,39 @@ $border-radius: 15px;
   }
   .section-2 {
     margin: 0;
+  }
+  .breadcrumbs {
+    font-size: 14px;
+    padding: 15px 5px 15px 5px;
+    border-radius: $border-radius;
+    box-shadow: 0px 1px 3px 0px $color-shadow;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+        a {
+          padding: 5px;
+          color: $color-4;
+          i {
+            color: $color-2;
+            padding: 5px;
+          }
+        }
+      }
+      li::after {
+        content: ">";
+      }
+      .last {
+        a {
+          color: $color-2;
+        }
+      }
+      .last::after {
+        content: "";
+      }
+    }
   }
   .bookmark {
     position: absolute;
@@ -335,6 +410,8 @@ $border-radius: 15px;
     height: 200px;
     position: relative;
     perspective: 135rem;
+    background: #f1f1f1;
+    border-radius: 15px;
     .next,
     .prev {
       color: #fff !important;
@@ -387,7 +464,7 @@ $border-radius: 15px;
         .property {
           .title {
             margin-top: 5px;
-            font-size: 12px;
+            font-size: 14px;
             font-weight: bold;
           }
           .rating {
@@ -402,10 +479,10 @@ $border-radius: 15px;
             }
           }
           .synopsis {
-            font-size: 8px;
+            font-size: 14px;
             font-weight: normal;
-            overflow-y: auto;
-            height: 67px;
+            overflow-y: scroll;
+            height: 70px;
             margin: 5px;
           }
           .readmore {
@@ -638,6 +715,7 @@ $border-radius: 15px;
       position: fixed;
       top: 0;
       width: 100%;
+      z-index: -1;
     }
     .background-img {
       position: relative;
@@ -713,16 +791,21 @@ $border-radius: 15px;
       border-radius: 20px 20px 0 0;
       background: $color-1;
       margin-top: -30px;
+      box-shadow: 0px 1px 5px 0px $color-shadow;
+      .icon-up {
+        margin-left: 49%;
+        margin-right: 49%;
+      }
       .tab-about {
         display: inline-block;
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
         margin: 10px 0 0 10px;
         color: $color-6;
       }
       .tab-chapter {
         display: inline-block;
-        font-size: 14px;
+        font-size: 16px;
         padding: 10px;
         margin: 10px 0 0 10px;
         color: $color-6;
@@ -738,7 +821,8 @@ $border-radius: 15px;
           color: $color-4;
         }
         .tab-content-about {
-          padding: 15px;
+          padding: 0 15px 0 15px;
+          font-size: 14px;
           table {
             tr {
               td {
@@ -751,7 +835,10 @@ $border-radius: 15px;
           }
         }
         .tab-content-chapter {
-          margin: 20px;
+          padding: 0px 20px 20px 0px;
+          font-size: 14px;
+          margin-left: 10px;
+          margin-bottom: 20px;
           .chapter-wrapper {
             height: 35px;
             padding: 10px 0 10px 0;
@@ -763,6 +850,12 @@ $border-radius: 15px;
           }
         }
       }
+    }
+  }
+  .read-chapter {
+    background-image: linear-gradient(360deg, #000000, transparent) !important;
+    img {
+      width: 100%;
     }
   }
   .footer {
@@ -817,6 +910,43 @@ $border-radius: 15px;
   }
   .footer-custom {
     box-shadow: 0px -20px 20px 4px $color-1;
+  }
+  .footer-custom-2 {
+    border-radius: 15px;
+    height: 40px;
+    font-size: 14px;
+    background: #f65e39;
+    color: #dfe0e1;
+    margin-left: auto;
+    width: 95%;
+    margin-right: auto;
+    left: 3%;
+    bottom: 1%;
+    .property {
+      display: inline-block;
+      position: absolute;
+      left: 15px;
+      top: 10px;
+      i {
+        margin: 0 10px 0 10px;
+      }
+    }
+    .chapter {
+      display: inline-block;
+      position: absolute;
+      right: 30px;
+      top: 10px;
+      a {
+        color: $color-3;
+        i {
+          font-size: 20px;
+          font-weight: bold;
+        }
+      }
+      span {
+        margin: 0 10px 0 10px;
+      }
+    }
   }
   .progress-wrapper {
     margin: 0 auto;

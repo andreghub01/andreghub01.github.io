@@ -81,6 +81,18 @@
     font-size: 15px;
     font-weight: bold;
   }
+  .header .chapter-menu {
+    display: inline-block;
+    padding: 23px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+  }
+  .header .chapter-menu i {
+    font-size: 18px;
+    font-weight: bold;
+  }
   .header .mobile-menu-dropdown {
     position: absolute;
     top: 55px;
@@ -138,6 +150,16 @@
     background: 0 0;
     color: #999;
   }
+  .chapter-menu-dropdown {
+    padding: 10px;
+  }
+  .chapter-menu-dropdown input {
+    margin: 10px 0 10px 0;
+    border-radius: 15px;
+  }
+  .chapter-menu-dropdown ul li {
+    padding: 10px 5px 10px 5px !important;
+  }
   .header-custom {
     background: transparent;
   }
@@ -154,6 +176,17 @@
   .header-custom .search-menu {
     right: 25px;
   }
+  .header-custom-2 {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#000000), to(transparent)) !important;
+    background-image: linear-gradient(180deg, #000000, transparent) !important;
+    background: transparent;
+  }
+  .header-custom-2 .mobile-menu i {
+    color: #ffffff !important;
+  }
+  .header-custom-2 .chapter-menu {
+    color: #ffffff !important;
+  }
   .container {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -161,6 +194,10 @@
   .container-2 {
     margin-top: 0;
     margin-bottom: 0;
+  }
+  .container-3 {
+    margin: 0;
+    padding: 0;
   }
   .container-book-custom {
     padding-right: 5px;
@@ -178,6 +215,38 @@
   }
   .section-2 {
     margin: 0;
+  }
+  .breadcrumbs {
+    font-size: 14px;
+    padding: 15px 5px 15px 5px;
+    border-radius: 15px;
+    -webkit-box-shadow: 0px 1px 3px 0px #828282;
+            box-shadow: 0px 1px 3px 0px #828282;
+  }
+  .breadcrumbs ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .breadcrumbs ul li {
+    display: inline-block;
+  }
+  .breadcrumbs ul li a {
+    padding: 5px;
+    color: #333436;
+  }
+  .breadcrumbs ul li a i {
+    color: #f65e39;
+    padding: 5px;
+  }
+  .breadcrumbs ul li::after {
+    content: ">";
+  }
+  .breadcrumbs ul .last a {
+    color: #f65e39;
+  }
+  .breadcrumbs ul .last::after {
+    content: "";
   }
   .bookmark {
     position: absolute;
@@ -331,6 +400,8 @@
     position: relative;
     -webkit-perspective: 135rem;
             perspective: 135rem;
+    background: #f1f1f1;
+    border-radius: 15px;
   }
   .book-3 .next,
   .book-3 .prev {
@@ -391,7 +462,7 @@
   }
   .book-3 .carousel .item .property .title {
     margin-top: 5px;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
   }
   .book-3 .carousel .item .property .rating {
@@ -406,10 +477,10 @@
     color: #ffc107;
   }
   .book-3 .carousel .item .property .synopsis {
-    font-size: 8px;
+    font-size: 14px;
     font-weight: normal;
-    overflow-y: auto;
-    height: 67px;
+    overflow-y: scroll;
+    height: 70px;
     margin: 5px;
   }
   .book-3 .carousel .item .property .readmore {
@@ -633,6 +704,7 @@
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: -1;
   }
   .background-info .background-img {
     position: relative;
@@ -704,17 +776,23 @@
     border-radius: 20px 20px 0 0;
     background: #ffffff;
     margin-top: -30px;
+    -webkit-box-shadow: 0px 1px 5px 0px #828282;
+            box-shadow: 0px 1px 5px 0px #828282;
+  }
+  .background-info .background-tab .icon-up {
+    margin-left: 49%;
+    margin-right: 49%;
   }
   .background-info .background-tab .tab-about {
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     margin: 10px 0 0 10px;
     color: #bfc1c3;
   }
   .background-info .background-tab .tab-chapter {
     display: inline-block;
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px;
     margin: 10px 0 0 10px;
     color: #bfc1c3;
@@ -731,7 +809,8 @@
     color: #333436;
   }
   .background-info .background-tab .tab-content-wrapper .tab-content-about {
-    padding: 15px;
+    padding: 0 15px 0 15px;
+    font-size: 14px;
   }
   .background-info .background-tab .tab-content-wrapper .tab-content-about table tr td {
     padding: 5px;
@@ -740,7 +819,10 @@
     padding: 6px;
   }
   .background-info .background-tab .tab-content-wrapper .tab-content-chapter {
-    margin: 20px;
+    padding: 0px 20px 20px 0px;
+    font-size: 14px;
+    margin-left: 10px;
+    margin-bottom: 20px;
   }
   .background-info .background-tab .tab-content-wrapper .tab-content-chapter .chapter-wrapper {
     height: 35px;
@@ -750,6 +832,13 @@
   .background-info .background-tab .tab-content-wrapper .tab-content-chapter .chapter-wrapper a {
     padding: 10px;
     color: #333436;
+  }
+  .read-chapter {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#000000), to(transparent)) !important;
+    background-image: linear-gradient(360deg, #000000, transparent) !important;
+  }
+  .read-chapter img {
+    width: 100%;
   }
   .footer {
     display: block;
@@ -804,6 +893,43 @@
   .footer-custom {
     -webkit-box-shadow: 0px -20px 20px 4px #ffffff;
             box-shadow: 0px -20px 20px 4px #ffffff;
+  }
+  .footer-custom-2 {
+    border-radius: 15px;
+    height: 40px;
+    font-size: 14px;
+    background: #f65e39;
+    color: #dfe0e1;
+    margin-left: auto;
+    width: 95%;
+    margin-right: auto;
+    left: 3%;
+    bottom: 1%;
+  }
+  .footer-custom-2 .property {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+  }
+  .footer-custom-2 .property i {
+    margin: 0 10px 0 10px;
+  }
+  .footer-custom-2 .chapter {
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+  .footer-custom-2 .chapter a {
+    color: #dfe0e1;
+  }
+  .footer-custom-2 .chapter a i {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .footer-custom-2 .chapter span {
+    margin: 0 10px 0 10px;
   }
   .progress-wrapper {
     margin: 0 auto;
