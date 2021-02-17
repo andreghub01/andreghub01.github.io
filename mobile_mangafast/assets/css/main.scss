@@ -3,6 +3,7 @@ $color-2: #f65e39;
 $color-3: #dfe0e1;
 $color-4: #333436;
 $color-5: #ffc107;
+$color-6: #bfc1c3;
 $color-shadow: #828282;
 
 $width-image: 130px;
@@ -32,7 +33,6 @@ $border-radius: 15px;
   .header {
     position: fixed;
     top: 0;
-    border-radius: 30px;
     display: block;
     width: 100%;
     height: 60px;
@@ -45,8 +45,17 @@ $border-radius: 15px;
       left: 0;
       border: 0;
       cursor: pointer;
+      color: $color-4;
       i {
         font-size: 18px;
+        font-weight: bold;
+      }
+      .menu-bar {
+        background-image: url(../img/bars.png);
+        height: 25px;
+        position: relative;
+        width: 25px;
+        background-repeat: no-repeat;
       }
     }
     .profile-menu {
@@ -63,6 +72,26 @@ $border-radius: 15px;
         height: 30px;
       }
     }
+    .title-menu {
+      position: absolute;
+      display: inline-block;
+      top: 18px;
+      left: 7rem;
+      span {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
+    .search-menu {
+      position: absolute;
+      display: inline-block;
+      top: 20px;
+      right: 70px;
+      i {
+        font-size: 15px;
+        font-weight: bold;
+      }
+    }
     .mobile-menu-dropdown {
       position: absolute;
       top: 55px;
@@ -77,22 +106,115 @@ $border-radius: 15px;
         padding: 0;
         li {
           padding: 10px;
+          a {
+            color: $color-4;
+          }
         }
       }
+    }
+  }
+  .search-menu-dropdown {
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 999;
+    top: 0;
+    padding-top: 10%;
+    .icon-times {
+      height: 50px;
+      width: 50px;
+      border-radius: 50px;
+      background: #333;
+      text-align: center;
+      padding: 15px;
+      i {
+        font-size: 18px;
+        position: relative;
+        color: $color-1;
+        font-weight: normal;
+      }
+    }
+    .search-model-form {
+      padding: 0 15px;
+      padding: 0 15px;
+      margin-top: 50%;
+      input {
+        width: 100%;
+        font-size: 15px;
+        border: none;
+        border-bottom: 2px solid #333;
+        background: 0 0;
+        color: #999;
+      }
+    }
+  }
+  .header-custom {
+    background: transparent;
+    .mobile-menu,
+    .title-menu,
+    .search-menu {
+      color: $color-1;
+    }
+    .mobile-menu i,
+    .title-menu span,
+    .search-menu i {
+      font-weight: normal;
+    }
+    .search-menu {
+      right: 25px;
     }
   }
   .container {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+  .container-2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
   .container-book-custom {
     padding-right: 5px;
   }
+  .content {
+    border-bottom: 0.3px solid #d2d2d2;
+    padding-bottom: 15px;
+  }
   .section {
     margin-top: 60px;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
     padding: 0 0 50px 10px;
     background: $color-1;
+  }
+  .section-2 {
+    margin: 0;
+  }
+  .bookmark {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 20px;
+    width: 14px;
+    padding: 0px;
+    -webkit-transform: rotate(0deg) skew(0deg);
+    transform: rotate(0deg) skew(0deg);
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid $color-3;
+    border-right: 7px solid $color-3;
+  }
+  .button {
+    background: $color-2;
+    color: $color-1;
+    position: relative;
+    display: inline-block;
+    bottom: 0;
+    width: 49%;
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 14px;
   }
   .wrapper-slide {
     overflow: auto;
@@ -118,19 +240,6 @@ $border-radius: 15px;
       width: 100%;
       height: 100%;
       border-radius: $border-radius;
-      .bookmark {
-        position: absolute;
-        top: 0;
-        right: 15px;
-        height: 20px;
-        width: 14px;
-        padding: 0px;
-        -webkit-transform: rotate(0deg) skew(0deg);
-        transform: rotate(0deg) skew(0deg);
-        border-bottom: 7px solid transparent;
-        border-left: 7px solid $color-3;
-        border-right: 7px solid $color-3;
-      }
       .bookmarked {
         border-left: 7px solid $color-2;
         border-right: 7px solid $color-2;
@@ -159,11 +268,6 @@ $border-radius: 15px;
       }
     }
   }
-  .book-2:nth-child(2),
-  .book-2:nth-child(4) {
-    background: $color-2;
-    color: $color-1;
-  }
   .book-2 {
     width: 225px;
     box-shadow: 0px 1px 3px 0px $color-shadow;
@@ -189,6 +293,9 @@ $border-radius: 15px;
       .title {
         font-weight: bold;
         font-size: 14px;
+        a {
+          color: $color-4;
+        }
       }
       .genre {
         ul {
@@ -202,18 +309,133 @@ $border-radius: 15px;
             color: $color-3;
             padding: 3px 5px 3px 5px;
             margin: 2px;
+            a {
+              color: $color-1;
+            }
           }
         }
       }
     }
   }
+  .book-2:nth-child(2),
+  .book-2:nth-child(4),
+  .book-2:nth-child(6),
+  .book-2:nth-child(8),
+  .book-2:nth-child(10),
+  .book-2:nth-child(12) {
+    background: $color-2;
+    color: $color-1;
+    a {
+      color: $color-1 !important;
+    }
+  }
   .book-3 {
-    display: block;
-    overflow: hidden;
-    padding: 3px;
-    .title {
-      font-weight: bold;
-      margin-bottom: 5px;
+    margin: 0 auto;
+    width: 250px;
+    height: 200px;
+    position: relative;
+    perspective: 135rem;
+    .next,
+    .prev {
+      color: #fff !important;
+      position: absolute;
+      top: 60px;
+      padding: 3em 1em;
+      cursor: pointer;
+      background: #252525a6;
+      border-radius: 5px;
+    }
+    .next:hover,
+    .prev:hover {
+      color: #000;
+    }
+    .next:active,
+    .prev:active {
+      top: 104px;
+      box-shadow: 0 1px 0 #999;
+    }
+    .next {
+      right: 0;
+    }
+    .prev {
+      left: 0;
+    }
+    .carousel {
+      width: 50px;
+      height: 50px;
+      left: 40%;
+      position: absolute;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+      .item {
+        display: block;
+        position: absolute;
+        width: 150px;
+        height: 190px;
+        margin-left: -50px;
+        text-align: center;
+        color: #fff;
+        border-radius: $border-radius;
+        box-shadow: 0px 1px 3px 0px #828282;
+        padding: 8px;
+        background: $color-2;
+        img {
+          width: 50px;
+          height: 50px;
+          border-radius: 50px;
+        }
+        .property {
+          .title {
+            margin-top: 5px;
+            font-size: 12px;
+            font-weight: bold;
+          }
+          .rating {
+            position: absolute;
+            top: 10px;
+            background: $color-4;
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            font-size: 9px;
+            i {
+              color: $color-5;
+            }
+          }
+          .synopsis {
+            font-size: 8px;
+            font-weight: normal;
+            overflow-y: auto;
+            height: 67px;
+            margin: 5px;
+          }
+          .readmore {
+            position: absolute;
+            bottom: 10px;
+            left: 30%;
+            a {
+              color: $color-1;
+            }
+          }
+        }
+      }
+      .a {
+        transform: rotateY(0deg) translateZ(190px);
+      }
+      .b {
+        transform: rotateY(60deg) translateZ(190px);
+      }
+      .c {
+        transform: rotateY(120deg) translateZ(190px);
+      }
+      .d {
+        transform: rotateY(180deg) translateZ(190px);
+      }
+      .e {
+        transform: rotateY(240deg) translateZ(190px);
+      }
+      .f {
+        transform: rotateY(300deg) translateZ(190px);
+      }
     }
   }
   .book-4 {
@@ -305,6 +527,244 @@ $border-radius: 15px;
       margin-right: 8px;
     }
   }
+  .book-5 {
+    position: relative;
+    display: inline-block;
+    width: 49%;
+    padding: 5px;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 10px;
+    .img {
+      img {
+        height: $height-image;
+        width: $width-image;
+        border-radius: $border-radius;
+      }
+    }
+    .hot {
+      width: 40px;
+      height: 20px;
+      background: #333436bd;
+      padding: 2px 5px 2px 6px;
+      border-radius: 5px;
+      color: $color-3;
+      position: absolute;
+      top: 10px;
+      left: 5px;
+    }
+    .property {
+      .title {
+        font-weight: bold;
+        font-size: 14px;
+        a {
+          color: $color-4;
+        }
+      }
+      .genre {
+        display: inline-block;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            font-size: 8px;
+            float: left;
+            background: #333436;
+            padding: 3px 5px 3px 5px;
+            border-radius: 5px;
+            color: #dfe0e1;
+            margin-right: 5px;
+            margin-top: 3px;
+            a {
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .book-6 {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid #cacaca;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 3px 0px $color-shadow;
+    border-radius: $border-radius;
+    margin: 5px 2px 5px 5px;
+    .img {
+      img {
+        height: $height-image;
+        width: $width-image;
+        border-radius: $border-radius;
+      }
+    }
+    .property {
+      padding: 5px;
+      position: absolute;
+      top: 0;
+      background-image: linear-gradient(358deg, #000, transparent, #000000b3);
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius;
+      .title {
+        font-size: 12px;
+        position: absolute;
+        bottom: 40px;
+        color: $color-1;
+      }
+      .genre {
+        position: absolute;
+        bottom: 15px;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            font-size: 8px;
+            float: left;
+            background: $color-2;
+            border-radius: 10px;
+            color: $color-3;
+            padding: 3px 5px 3px 5px;
+            margin: 2px;
+            a {
+              color: $color-1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .background-info {
+    .background-img-wrapper {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+    .background-img {
+      position: relative;
+      img {
+        width: 100%;
+      }
+      .background-shadow {
+        bottom: 0;
+        background-image: linear-gradient(
+          358deg,
+          #000000b3,
+          transparent,
+          #000000b3
+        );
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+      .background-property {
+        bottom: 50px;
+        position: absolute;
+        width: 100%;
+        .background-title {
+          display: inline-block;
+          width: 50%;
+          padding: 20px;
+          float: left;
+          a {
+            color: $color-1;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+        .background-rating {
+          display: inline-block;
+          width: 50%;
+          font-size: 20px;
+          color: $color-1;
+          padding: 20px;
+          float: right;
+          text-align: right;
+          i {
+            color: $color-5;
+          }
+        }
+      }
+    }
+    .background-blanks {
+      margin-top: 140%;
+    }
+    .show-tab {
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      box-shadow: 0px 0px 3px 0px $color-shadow;
+      position: absolute;
+      text-align: center;
+      right: 5%;
+      background: $color-1;
+      top: 0;
+      margin-top: 126%;
+      z-index: 9;
+      .bookmark {
+        margin-top: 1.5rem;
+        margin-right: 0.3rem;
+        border-left: 7px solid $color-2;
+        border-right: 7px solid $color-2;
+      }
+    }
+    .background-tab {
+      position: absolute;
+      width: 100%;
+      border-radius: 20px 20px 0 0;
+      background: $color-1;
+      margin-top: -30px;
+      .tab-about {
+        display: inline-block;
+        font-size: 14px;
+        padding: 10px;
+        margin: 10px 0 0 10px;
+        color: $color-6;
+      }
+      .tab-chapter {
+        display: inline-block;
+        font-size: 14px;
+        padding: 10px;
+        margin: 10px 0 0 10px;
+        color: $color-6;
+      }
+      .active {
+        color: $color-2;
+        font-weight: bold;
+      }
+      .tab-content-wrapper {
+        padding-bottom: 30px;
+        .active {
+          display: block !important;
+          color: $color-4;
+        }
+        .tab-content-about {
+          padding: 15px;
+          table {
+            tr {
+              td {
+                padding: 5px;
+              }
+            }
+          }
+          .synopsis {
+            padding: 6px;
+          }
+        }
+        .tab-content-chapter {
+          margin: 20px;
+          .chapter-wrapper {
+            height: 35px;
+            padding: 10px 0 10px 0;
+            border-bottom: 1px solid #d8d8d8;
+            a {
+              padding: 10px;
+              color: $color-4;
+            }
+          }
+        }
+      }
+    }
+  }
   .footer {
     display: block;
     width: 100%;
@@ -326,8 +786,10 @@ $border-radius: 15px;
         width: 15%;
         padding: 13px;
         font-size: 17px;
-        color: $color-3;
         margin: 1px;
+        a {
+          color: $color-3;
+        }
       }
       li:nth-child(2) {
         margin-right: 40px;
@@ -347,73 +809,263 @@ $border-radius: 15px;
         padding: 15px;
       }
       .active {
-        color: $color-2;
+        a {
+          color: $color-2;
+        }
       }
     }
   }
-
-  /*
-  / CARD CAROUSEL
-  */
-  .card-carousel {
-    z-index: 1;
-    position: relative;
+  .footer-custom {
+    box-shadow: 0px -20px 20px 4px $color-1;
+  }
+  .progress-wrapper {
     margin: 0 auto;
-    height: 250px;
-    transition: filter 0.3s ease;
-  }
-
-  .card-carousel.smooth-return {
-    transition: all 0.2s ease;
-  }
-
-  .card-carousel .card {
-    background: $color-1;
-    width: 100px;
-    max-width: 100px;
-    text-align: center;
-    padding: 1em;
-    min-width: 130px;
+    display: inline-block;
     position: absolute;
-    margin: 0 auto;
-    color: rgba(0, 0, 0, 0.5);
-    transition: inherit;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 1em;
-    filter: brightness(0.9);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+    right: 10px;
+    top: 10px;
+    /* -------------------------------------
+    * Bar container
+    * ------------------------------------- */
+    .progress-radial {
+      float: left;
+      position: relative;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: $color-2;
+      box-shadow: 0px 1px 3px 0px $color-shadow;
+    }
 
-  .card.highlight {
-    filter: brightness(1);
-  }
+    /* -------------------------------------
+   * Optional centered circle w/text
+   * ------------------------------------- */
+    .progress-radial .overlay {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background-color: $color-2;
+      color: $color-1;
+      border-radius: 50%;
+      border: 1px solid $color-1;
+      margin-left: 5px;
+      margin-top: 5px;
+      text-align: center;
+      line-height: 30px;
+      font-size: 8px;
+    }
 
-  .image-container {
-    width: 8em;
-    height: 8em;
-    position: relative;
-    background-size: cover;
-    margin-bottom: 2em;
-    border-radius: 100%;
-    padding: 1em;
-    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 0.3);
-  }
+    /* -------------------------------------
+   * Mixin for progress-% class
+   * ------------------------------------- */
+    .progress-0 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(90deg, $color-2 50%, $color-1 50%, $color-1);
+    }
 
-  .image-container::after {
-    display: block;
-    width: 120%;
-    height: 120%;
-    border: solid 3px rgba(0, 0, 0, 0.1);
-    border-radius: 100%;
-    position: absolute;
-    top: calc(-10% - 3px);
-    left: calc(-10% - 3px);
+    .progress-5 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(108deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-10 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(126deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-15 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(144deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-20 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(162deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-25 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(180deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-30 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(198deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-35 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(216deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-40 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(234deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-45 {
+      background-image: linear-gradient(
+          90deg,
+          $color-1 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(252deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-50 {
+      background-image: linear-gradient(
+          -90deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-55 {
+      background-image: linear-gradient(
+          -72deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-60 {
+      background-image: linear-gradient(
+          -54deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-65 {
+      background-image: linear-gradient(
+          -36deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-70 {
+      background-image: linear-gradient(
+          -18deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-75 {
+      background-image: linear-gradient(
+          0deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-80 {
+      background-image: linear-gradient(
+          18deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-85 {
+      background-image: linear-gradient(
+          36deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-90 {
+      background-image: linear-gradient(
+          54deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-95 {
+      background-image: linear-gradient(
+          72deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
+
+    .progress-100 {
+      background-image: linear-gradient(
+          90deg,
+          $color-2 50%,
+          rgba(0, 0, 0, 0) 50%,
+          rgba(0, 0, 0, 0)
+        ),
+        linear-gradient(270deg, $color-2 50%, $color-1 50%, $color-1);
+    }
   }
 }
