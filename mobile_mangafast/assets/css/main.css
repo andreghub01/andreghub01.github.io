@@ -615,7 +615,7 @@
   .book-5 .hot {
     width: 40px;
     height: 20px;
-    background: #333436bd;
+    background: #f65e39;
     padding: 2px 5px 2px 6px;
     border-radius: 5px;
     color: #dfe0e1;
@@ -700,6 +700,77 @@
   .book-6 .property .genre ul li a {
     color: #ffffff;
   }
+  .book-7 {
+    position: relative;
+    width: 100%;
+  }
+  .book-7 .img {
+    display: inline-block;
+    float: left;
+    width: 25%;
+  }
+  .book-7 .img img {
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+  }
+  .book-7 .property {
+    display: inline-block;
+    float: left;
+    position: relative;
+    width: 75%;
+  }
+  .book-7 .property .title {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .book-7 .property .title a {
+    color: #333436;
+  }
+  .book-7 .property .genre {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px 0 0 0;
+  }
+  .book-7 .property .genre ul {
+    list-style: none;
+    padding: 0;
+  }
+  .book-7 .property .genre ul li {
+    font-size: 8px;
+    float: left;
+    background: #333436;
+    border-radius: 10px;
+    color: #dfe0e1;
+    padding: 3px 5px 3px 5px;
+    margin: 2px;
+  }
+  .book-7 .property .genre ul li a {
+    color: #ffffff;
+  }
+  .book-7 .property .date {
+    display: inline-block;
+  }
+  .book-7 .property .progress-wrapper {
+    right: 20%;
+    top: 25px;
+  }
+  .book-7 .property .progress-wrapper .progress-radial {
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+  }
+  .book-7 .property .btn {
+    position: absolute;
+    right: 0;
+    top: 25px;
+  }
+  .book-7 .property .btn a {
+    color: #f65e39;
+  }
+  .book-7 .property .btn a i {
+    font-size: 20px;
+  }
   .background-info .background-img-wrapper {
     position: fixed;
     top: 0;
@@ -746,6 +817,19 @@
   }
   .background-info .background-img .background-property .background-rating i {
     color: #ffc107;
+  }
+  .background-info .background-img .background-notice {
+    color: #333436;
+    font-weight: bold;
+    font-size: 30px;
+    position: absolute;
+    top: -305px;
+    left: 5%;
+    display: inline-block;
+    width: 285px;
+  }
+  .background-info .background-img .background-notice p {
+    font-size: 14px;
   }
   .background-info .background-blanks {
     margin-top: 140%;

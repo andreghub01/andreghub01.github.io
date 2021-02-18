@@ -621,7 +621,7 @@ $border-radius: 15px;
     .hot {
       width: 40px;
       height: 20px;
-      background: #333436bd;
+      background: $color-2;
       padding: 2px 5px 2px 6px;
       border-radius: 5px;
       color: $color-3;
@@ -710,6 +710,74 @@ $border-radius: 15px;
       }
     }
   }
+  .book-7 {
+    position: relative;
+    width: 100%;
+    .img {
+      display: inline-block;
+      float: left;
+      width: 25%;
+      img {
+        border-radius: 50px;
+        height: 60px;
+        width: 60px;
+      }
+    }
+    .property {
+      display: inline-block;
+      float: left;
+      position: relative;
+      width: 75%;
+      .title {
+        font-size: 14px;
+        font-weight: bold;
+        a {
+          color: $color-4;
+        }
+      }
+      .genre {
+        display: flex;
+        margin: 5px 0 0 0;
+        ul {
+          list-style: none;
+          padding: 0;
+          li {
+            font-size: 8px;
+            float: left;
+            background: $color-4;
+            border-radius: 10px;
+            color: $color-3;
+            padding: 3px 5px 3px 5px;
+            margin: 2px;
+            a {
+              color: $color-1;
+            }
+          }
+        }
+      }
+      .date {
+        display: inline-block;
+      }
+      .progress-wrapper {
+        right: 20%;
+        top: 25px;
+        .progress-radial {
+          box-shadow: unset;
+        }
+      }
+      .btn {
+        position: absolute;
+        right: 0;
+        top: 25px;
+        a {
+          color: $color-2;
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
   .background-info {
     .background-img-wrapper {
       position: fixed;
@@ -760,6 +828,19 @@ $border-radius: 15px;
           i {
             color: $color-5;
           }
+        }
+      }
+      .background-notice {
+        color: $color-4;
+        font-weight: bold;
+        font-size: 30px;
+        position: absolute;
+        top: -305px;
+        left: 5%;
+        display: inline-block;
+        width: 285px;
+        p {
+          font-size: 14px;
         }
       }
     }
